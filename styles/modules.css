@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 1180px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1180px) {
+  .wrapper {
+      padding: 0;
+  }
+}
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nunito {
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+}
