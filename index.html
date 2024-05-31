@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Palacasa</title>
-    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
-    <link rel="stylesheet" href="./index.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/home-slideshow.js" defer></script>
+    <!-- <link rel="stylesheet" href="./index.min.css"> -->
 </head>
 <body class="nunito">
   <header class="header">
@@ -16,15 +17,24 @@
       <nav class="header-navigation">
         <ul class="header-navigation__ul list-unstyled">
           <li>
-            <a href="" class="header__a">Inicio</a>
+            <a href="" class="header__a">
+              Inicio
+              <span class="header__a-underline"></span>
+            </a>
           </li>
           <li>
-            <a href="" class="header__a">Catalogo</a>
+            <a href="" class="header__a">
+              Catalogo
+              <span class="header__a-underline"></span>
+            </a>
           </li>
           <li>
-            <a href="" class="header__a">Contacto</a>
+            <a href="" class="header__a">
+              Contacto
+              <span class="header__a-underline"></span>
+            </a>
           </li>
-          <li>
+          <li class="header__bag-li">
             <a href="" class="header-navigation__a">
               <img src="./assets/images/bag-icon.svg" alt="" class="header__bag-icon">
             </a>
@@ -33,43 +43,60 @@
       </nav>
     </div>
   </header>
+  <div class="wrapper--large">
+    <section class="hero">
+      <div class="hero-image-container hero-image-container--mobile">
+        <a href="" class="image-anchor">
+          <img src="./assets/images/Banner-small.png" alt="" class="hero__image">
+        </a>
+        <a href="" class="image-anchor">
+          <img src="./assets/images/Banner-small2.png" alt="" class="hero__image">
+        </a>
+      </div>
   
-  <section class="hero">
-    <div class="hero-image-container hero-image-container--mobile">
-      <a href="" class="image-anchor">
-        <img src="./assets/images/Banner-small.png" alt="" class="hero__image">
-      </a>
-      <a href="" class="image-anchor">
-        <img src="./assets/images/Banner-small2.png" alt="" class="hero__image">
-      </a>
-    </div>
-
-    <div class="hero-image-container hero-image-container--desktop">
-      <a href="" class="image-anchor">
-        <img src="./assets/images/Banner--large.png" alt="" class="hero__image">
-      </a>
-      <a href="" class="image-anchor">
-        <img src="./assets/images/Banner--large2.png" alt="" class="hero__image">
-      </a>
-    </div>
-
-    <div class="hero-buttons"></div>
-  </section>
-
-  <div class="wrapper">
-    <section class="collections">
-      <a href="#" class="collections__item collections__item--large">
-        <h2 class="collections__heading">Collection</h2>
-      </a href="#">
+      <div class="hero-image-container hero-image-container--desktop">
+        <a href="" class="image-anchor">
+          <img src="./assets/images/Banner--large.png" alt="" class="hero__image">
+        </a>
+        <a href="" class="image-anchor">
+          <img src="./assets/images/Banner--large2.png" alt="" class="hero__image">
+        </a>
+      </div>
   
-      <a href="#" class="collections__item">
-        <h2 class="collections__heading">Collection</h2>
-      </a href="#">
-  
-      <a href="#" class="collections__item">
-        <h2 class="collections__heading">Collection</h2>
-      </a href="#">
+      <div class="hero-buttons"></div>
     </section>
+  </div>
+
+  <div class="wrapper--large">
+    <section class="collections-container" id="collections-container">
+      <div class="collections">
+        <a href="#1" class="collections__item collections__item--big">
+          <h2 class="collections__heading">Collection 1</h2>
+        </a>
+    
+        <a href="#2" class="collections__item collections__item--long">
+          <h2 class="collections__heading">Collection 2</h2>
+        </a>
+    
+        <a href="#3" class="collections__item">
+          <h2 class="collections__heading">Collection 3</h2>
+        </a>
+  
+        <a href="#4" class="collections__item">
+          <h2 class="collections__heading">Collection 4</h2>
+        </a>
+  
+        <a href="#5" class="collections__item">
+          <h2 class="collections__heading">Collection 5</h2>
+        </a>
+  
+        <a href="#6" class="collections__item">
+          <h2 class="collections__heading">Collection 6</h2>
+        </a>
+      </div>
+    </section>
+
+    <a href="#" class="banner"></a>
 
     <footer class="footer">
       <p>© 2024, Palacasa</p>
