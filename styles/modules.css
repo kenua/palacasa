@@ -30,3 +30,21 @@
   border-radius: 16px;
   overflow: hidden;
 }
+.link-underline {
+  position: relative;
+}
+.link-underline::before {
+  content: '';
+  background-color: #FFB775;
+  width: 0px;
+  height: 3px;
+  display: block;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 250ms ease-out;
+}
+.link-underline:hover::before, .link-underline:focus::before {
+  width: 60%;
+}

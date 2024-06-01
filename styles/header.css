@@ -20,27 +20,12 @@
   display: flex;
   align-items: center;
 }
-.header__a {
+.header .link-underline {
   font-weight: 600;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block;
-  position: relative;
-}
-.header__a-underline {
-  background-color: #FFB775;
-  width: 0px;
-  height: 3px;
-  display: block;
-  border-radius: 10px;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  transition: width 250ms ease-out;
-}
-.header__a:hover .header__a-underline {
-  width: 60%;
 }
 .header__bag-li {
   margin-left: 36px;
