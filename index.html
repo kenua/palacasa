@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Palacasa</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/slideshow.js" defer></script>
     <script src="./scripts/home-slideshow.js" defer></script>
     <!-- <link rel="stylesheet" href="./index.min.css"> -->
 </head>
@@ -36,25 +37,37 @@
   </header>
   <div class="wrapper--large">
     <section class="hero">
-      <div class="hero-image-container hero-image-container--mobile">
-        <a href="" class="image-anchor">
-          <img src="./assets/images/slideshow-placeholder.png" alt="" class="hero__image">
+      <div class="hero-image-container hero-image-container--mobile" id="slideshow-mobile">
+        <a href="#" class="image-anchor">
+          <!-- <img src="./assets/images/slideshow-placeholder.png" alt="" class="hero__image"> -->
+          <img src="https://i.pinimg.com/736x/50/36/c1/5036c10428e9384d97b88ca32f9263d7.jpg" alt="" class="hero__image">
         </a>
-        <a href="" class="image-anchor">
+        <a href="#" class="image-anchor">
+          <!-- <img src="./assets/images/slideshow-placeholder.png" alt="" class="hero__image"> -->
+          <img src="https://wallbox.ru/resize/1024x1024/wallpapers/main/201130/aston-martin-88af7c1.jpg" alt="" class="hero__image">
+        </a>
+        <a href="#" class="image-anchor">
           <img src="./assets/images/slideshow-placeholder.png" alt="" class="hero__image">
+          <!-- <img src="https://wallbox.ru/resize/1024x1024/wallpapers/main2/202118/16203024006093da40172537.22567531.jpg" alt="" class="hero__image"> -->
         </a>
       </div>
   
-      <div class="hero-image-container hero-image-container--desktop">
-        <a href="" class="image-anchor">
+      <div class="hero-image-container hero-image-container--desktop" id="slideshow-desktop">
+        <a href="#" class="image-anchor">
+          <img src="./assets/images/slideshow-placeholder--desktop.png" alt="" class="hero__image">
+          <!-- <img src="https://www.fourpaws.com/-/media/Project/OneWeb/FourPaws/Images/articles/cat-corner/large-cat-breeds/bengal-cat.jpg" alt="" class="hero__image"> -->
+        </a>
+        <a href="#" class="image-anchor">
+          <!-- <img src="https://media.baamboozle.com/uploads/images/340064/1622065201_70071.jpeg" alt="" class="hero__image"> -->
           <img src="./assets/images/slideshow-placeholder--desktop.png" alt="" class="hero__image">
         </a>
-        <a href="" class="image-anchor">
+        <a href="#" class="image-anchor">
+          <!-- <img src="https://media.nbcnewyork.com/2019/09/GettyImages-529202089.jpg?quality=85&strip=all&fit=1200%2C675" alt="" class="hero__image"> -->
           <img src="./assets/images/slideshow-placeholder--desktop.png" alt="" class="hero__image">
         </a>
       </div>
   
-      <div class="hero-buttons"></div>
+      <div class="hero-buttons" id="slideshow-buttons"></div>
     </section>
   </div>
 

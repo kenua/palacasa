@@ -3,6 +3,7 @@
   position: relative;
   padding: 20px 0;
   overflow: hidden;
+  position: relative;
 }
 .hero-image-container {
   width: 100%;
@@ -19,9 +20,50 @@
   display: block;
   grid-row: 1 / 1;
   grid-column: 1 / 1;
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+.image-anchor--selected {
+  opacity: 1;
 }
 .hero__image {
   width: 100%;
+}
+.hero-buttons {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.hero__button {
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  display: block;
+  cursor: pointer;
+  text-indent: -9999px;
+  position: relative;
+  transition: border 250ms ease-in-out; 
+}
+.hero__button::before {
+  content: '';
+  background-color: #FFB775;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero__button:hover, .hero__button:focus {
+  border-color: #FFB775;
+}
+.hero__button--selected {
+  border-color: #FFB775;
 }
 
 @media screen and (min-width: 800px) {
