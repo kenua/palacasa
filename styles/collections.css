@@ -1,3 +1,6 @@
+.collections-wrapper {
+  position: relative;
+}
 .collections-container {
   overflow-x: auto;
   user-select: none;
@@ -66,6 +69,41 @@
   bottom: 8px;
   right: 8px;
   z-index: -1;
+}
+.collection-buttons {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.move-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  z-index: 10;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 250ms ease-in-out;
+}
+.move-button:hover {
+  border-color: black;
+}
+.move-button--next {
+  left: initial;
+  right: 24px;
+}
+.move-button svg {
+  width: 9px;
+  transform: rotate(180deg);
+}
+.move-button--next svg {
+  transform: rotate(0deg);
 }
 .scroll-guide {
   width: 82px;
