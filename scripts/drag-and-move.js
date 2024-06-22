@@ -17,10 +17,10 @@ window.addEventListener('DOMContentLoaded', () => {
   collectionsContainer.addEventListener('mouseup', drop);
   collectionsContainer.addEventListener('mouseleave', drop);
   // scroll left or right using buttons
-  prevButton.addEventListener('mousedown', () => scrollCollection(-75))
-  prevButton.addEventListener('mouseup', () => isDown = false)
-  nextButton.addEventListener('mousedown', () => scrollCollection(75))
-  nextButton.addEventListener('mouseup', () => isDown = false)
+  prevButton.addEventListener('pointerdown', () => scrollCollection(-75))
+  prevButton.addEventListener('pointerup', () => isDown = false)
+  nextButton.addEventListener('pointerdown', () => scrollCollection(75))
+  nextButton.addEventListener('pointerup', () => isDown = false)
 
   function dragSetup(e) {
     e.preventDefault();
