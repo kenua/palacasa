@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const prevButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
 
-  let isDown = false;
   let isDragging = false;
   let initialPos = null;
   let currentScroll = 0
@@ -17,10 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   collectionsContainer.addEventListener('mouseup', drop);
   collectionsContainer.addEventListener('mouseleave', drop);
   // scroll left or right using buttons
-  prevButton.addEventListener('mousedown', () => scrollCollection(-75))
-  prevButton.addEventListener('mouseup', () => isDown = false)
-  nextButton.addEventListener('mousedown', () => scrollCollection(75))
-  nextButton.addEventListener('mouseup', () => isDown = false)
+  prevButton.addEventListener('click', () => scrollCollectionBy(-300))
+  nextButton.addEventListener('click', () => scrollCollectionBy(300))
 
   function dragSetup(e) {
     e.preventDefault();
@@ -39,19 +36,11 @@ window.addEventListener('DOMContentLoaded', () => {
     currentScroll = collectionsContainer.scrollLeft;
   }
 
-  function scrollCollection(scrollValue) {
-    isDown = true;
-    moveCollection(scrollValue)
-  }
-
-  function moveCollection(scrollValue) {
-    if (isDown) {
-      collectionsContainer.scrollBy({
-        left: scrollValue,
-        behavior: 'smooth',
-      });
-      currentScroll = collectionsContainer.scrollLeft;
-      requestAnimationFrame(() => moveCollection(scrollValue));
-    }
+  function scrollCollectionBy(int) {
+    collectionsContainer.scrollBy({
+      left: int,
+      behavior: 'smooth',
+    });
+    currentScroll = currentScroll + int;
   }
 });
